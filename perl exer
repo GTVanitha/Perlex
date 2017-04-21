@@ -1,0 +1,16 @@
+1. Write a perl program which when given a list of numbers, will be able to print which given numbers sum up to which other numbers in the same list. Ex: Given numbers 2, 3, 6, 4, 9, 8, 7 it should print:
+9 = 4 + 3 + 2
+8 = 6 + 2
+7 = 4 + 3
+6 = 4 + 2
+
+2. Write a perl program which when given a list of strings, will be able to print those strings in this list which are sub strings of other given strings. Ex: Given strings "arun", "mani", "arunraj", "arun kumar", "arun mani" will print:
+
+arun = arunraj, arun kumar, arun mani
+mani = arun mani
+
+3. Write a perl program that enables two players to play 'Hangman' word game. The game's rules can be found here: http://en.wikipedia.org/wiki/Hangman_(game)
+
+    The program should read secret word from user1 and then tell user2 to take control of the keyboard. The game will present a string of '*'s to begin with and as user2 keeps guessing letters correctly, those letters should appear in place of the '*'s. When all *s have been removed, then the game is won by user2. When max_tries exceeds, user1 wins.
+
+
