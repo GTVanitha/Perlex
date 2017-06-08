@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+		<script type="text/javascript" src="/home/vanitha/Desktop/EN29/Admin/Web/JS/Accounts/Maxit/CostBasisEntry/CostBasisEntryPanel.js"></script>
+		<script type="text/javascript">
+			Ext.onReady(function() {
+				alert("----");
+				Ext.create('Ext.Panel', {
+					renderTo: 'helloWorldPanel',
+					height: 200,
+					width: 600,
+					title: 'Hello world',
+			//		html: 'First Ext JS Hello World Program',
+					items: [{
+							name      : 'mycheckbox',
+							xtype: 'checkbox',
+							id        : 'checkbox1',
+							listeners: {
+								change: function(eve) {
+									alert(this.name,this.getValue());
+
+								}
+							}
+					}]
+			});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="helloWorldPanel" />
+		</body>
+	</html>
